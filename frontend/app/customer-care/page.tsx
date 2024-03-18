@@ -4,6 +4,8 @@ import { Message } from "@/types/message";
 import { Send } from "react-feather";
 import LoadingDots from "@/components/LoadingDots";
 import Nav from "@/components/Navbar";
+//import { GLOBAL_VARIABLE } from '@/config';
+
 export default function Home() {
   const [message, setMessage] = useState<string>("");
   const [history, setHistory] = useState<Message[]>([
@@ -15,8 +17,10 @@ export default function Home() {
   ]);
   const lastMessageRef = useRef<HTMLDivElement | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
+  const my_arr= [];
 
   const handleClick = () => {
+    my_arr.push(message);
     if (message == "") return;
     setHistory((oldHistory) => [
       ...oldHistory,
@@ -32,6 +36,7 @@ export default function Home() {
   .then(async (res) => {
     const r = await res.json();
     console.log(r.answer);
+    my_arr.push(r.answer);
     setHistory((oldHistory) => [
       ...oldHistory,
       {

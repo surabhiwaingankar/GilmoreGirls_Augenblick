@@ -4,7 +4,8 @@ import { Message } from "@/types/message";
 import { Send } from "react-feather";
 import LoadingDots from "@/components/LoadingDots";
 import Nav from "@/components/Navbar";
-//import { GLOBAL_VARIABLE } from '@/config';
+import { GLOBAL_VARIABLE_SATISFIED } from '@/config';
+import { GLOBAL_VARIABLE_NOT_SATISFIED } from '@/config';
 
 export default function Home() {
   const [message, setMessage] = useState<string>("");
@@ -50,7 +51,15 @@ export default function Home() {
     alert(err);
   });
   }
+  const handleClickSatisfied = () => {
+    GLOBAL_VARIABLE_SATISFIED.push(my_arr);
+    console.log(GLOBAL_VARIABLE_SATISFIED);
+  }
 
+  const handleClickUnsatisfied = () => {
+    GLOBAL_VARIABLE_NOT_SATISFIED.push(my_arr);
+    console.log(GLOBAL_VARIABLE_SATISFIED);
+  }
   const formatPageName = (url: string) => {
     // Split the URL by "/" and get the last segment
     const pageName = url.split("/").pop();
@@ -192,13 +201,13 @@ export default function Home() {
           </div>
         </form>
         <div style={{ marginRight: "-1rem" }}>
-  <button className="flex w-25 h-14 items-center justify-center px-3 text-sm bg-blue-200 font-semibold text-black hover:bg-pink-300 active:bg-violet-800 absolute center-2 bottom-2 disabled:bg-violet-100 disabled:text-violet-400" style={{ borderRadius: "0.5rem" }}>
+  <button onClick={} className="flex w-25 h-14 items-center justify-center px-3 text-sm bg-blue-200 font-semibold text-black hover:bg-pink-300 active:bg-violet-800 absolute center-2 bottom-2 disabled:bg-violet-100 disabled:text-violet-400" style={{ borderRadius: "0.5rem" }}>
     I want to talk to a human!!
   </button>
   <br/> 
 </div>
 <div style={{ marginLeft: "-20rem" }}>
-  <button className="flex w-25 h-14 items-center justify-center px-3 text-sm bg-blue-200 font-semibold text-black hover:bg-pink-300 active:bg-violet-800 absolute center-4 bottom-2 disabled:bg-violet-100 disabled:text-violet-400" style={{ borderRadius: "0.5rem" }}>
+  <button onClick={} className="flex w-25 h-14 items-center justify-center px-3 text-sm bg-blue-200 font-semibold text-black hover:bg-pink-300 active:bg-violet-800 absolute center-4 bottom-2 disabled:bg-violet-100 disabled:text-violet-400" style={{ borderRadius: "0.5rem" }}>
     End Chat
   </button>
 </div>

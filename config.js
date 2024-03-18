@@ -1,0 +1,2 @@
+export const GLOBAL_VARIABLE_SATISFIED=[];
+export const GLOBAL_VARIABLE_NOT_SATISFIED=[];

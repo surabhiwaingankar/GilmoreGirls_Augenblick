@@ -5,12 +5,13 @@ import { ContainerScroll } from "../../components/ui/HomeComponent";
 export function HeroScrollDemo() {
   return (
     <div className="flex flex-col overflow-hidden">
+      <div className="gradient"/>
       <ContainerScroll
         users={users}
         titleComponent={
           <>
-            <h1 className="text-4xl font-semibold text-black dark:text-white">
-              Ask us anything! <br />
+            <h1 className="text-4xl font-semibold text-black">
+              Ask us anything! <br /><br />
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none blue_gradient">
                 SahAIta
               </span>

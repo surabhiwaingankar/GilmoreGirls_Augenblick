@@ -1,0 +1,32 @@
+.card {
+    width: 40%; /* Half of the page width */
+    height: 70vh; /* Full page height */
+    background-color: #bfdbfe;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Removed auto margin */
+    display: flex;
+    justify-content: center;
+    align-items: left; /* Adjusted to align content to the left */
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  .card2 {
+    width: 40%; /* Half of the page width */
+    height: 70vh; /* Full page height */
+    background-color: #bfdbfe;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Removed auto margin */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 10px;
+    margin-left: auto; /* Shift to the right/end of the page */
+  }
+  
+  
+  
+  .card-content {
+    text-align: center;
+    padding: 20px;
+  }
+  

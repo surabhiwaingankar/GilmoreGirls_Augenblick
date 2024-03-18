@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: left; /* Adjusted to align content to the left */
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 90px;
   }
   .card2 {
     width: 40%; /* Half of the page width */
@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center; 
     border-radius: 10px;
-    margin-left: auto; /* Shift to the right/end of the page */
+    margin-right:90px; /* Shift to the right/end of the page */
   }
   
   

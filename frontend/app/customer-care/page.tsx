@@ -4,8 +4,8 @@ import { Message } from "@/types/message";
 import { Send } from "react-feather";
 import LoadingDots from "@/components/LoadingDots";
 import Nav from "@/components/Navbar";
-import { GLOBAL_VARIABLE_SATISFIED } from '@/config';
-import { GLOBAL_VARIABLE_NOT_SATISFIED } from '@/config';
+import { GLOBAL_VARIABLE_SATISFIED } from '@/../config';
+import { GLOBAL_VARIABLE_NOT_SATISFIED } from '@/../config';
 
 export default function Home() {
   const [message, setMessage] = useState<string>("");
@@ -18,7 +18,7 @@ export default function Home() {
   ]);
   const lastMessageRef = useRef<HTMLDivElement | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
-  const my_arr= [];
+  const my_arr: string[]= [];
 
   const handleClick = () => {
     my_arr.push(message);
@@ -57,6 +57,7 @@ export default function Home() {
   }
 
   const handleClickUnsatisfied = () => {
+
     GLOBAL_VARIABLE_NOT_SATISFIED.push(my_arr);
     console.log(GLOBAL_VARIABLE_SATISFIED);
   }
@@ -201,13 +202,15 @@ export default function Home() {
           </div>
         </form>
         <div style={{ marginRight: "-1rem" }}>
-  <button onClick={} className="flex w-25 h-14 items-center justify-center px-3 text-sm bg-blue-200 font-semibold text-black hover:bg-pink-300 active:bg-violet-800 absolute center-2 bottom-2 disabled:bg-violet-100 disabled:text-violet-400" style={{ borderRadius: "0.5rem" }}>
+          <a href="/dashboard">
+  <button onClick={handleClickUnsatisfied} className="flex w-25 h-14 items-center justify-center px-3 text-sm bg-blue-200 font-semibold text-black hover:bg-pink-300 active:bg-violet-800 absolute center-2 bottom-2 disabled:bg-violet-100 disabled:text-violet-400" style={{ borderRadius: "0.5rem" }}>
     I want to talk to a human!!
   </button>
+  </a>
   <br/> 
 </div>
 <div style={{ marginLeft: "-20rem" }}>
-  <button onClick={} className="flex w-25 h-14 items-center justify-center px-3 text-sm bg-blue-200 font-semibold text-black hover:bg-pink-300 active:bg-violet-800 absolute center-4 bottom-2 disabled:bg-violet-100 disabled:text-violet-400" style={{ borderRadius: "0.5rem" }}>
+  <button onClick={handleClickSatisfied} className="flex w-25 h-14 items-center justify-center px-3 text-sm bg-blue-200 font-semibold text-black hover:bg-pink-300 active:bg-violet-800 absolute center-4 bottom-2 disabled:bg-violet-100 disabled:text-violet-400" style={{ borderRadius: "0.5rem" }}>
     End Chat
   </button>
 </div>

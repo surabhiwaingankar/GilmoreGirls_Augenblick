@@ -11,11 +11,11 @@ const Nav = () => {
             <Image 
             src="/images/logo.png"
             alt="SahAIta Logo"
-            width={30}
-            height={30}
-            className='object-contain'
+            width={50}
+            height={50}
+            className='rounded-full'
             />
-            <p className='logo_text'>
+            <p className='blue_gradient'>
             SahAIta
             </p>
         </Link>
@@ -32,7 +32,7 @@ const Nav = () => {
                 Customer Care Chat 
               </Link>
               <Link href=""
-              className='black_btn'>
+              className='dark_btn'>
                 Dashboard
               </Link>
               <button type='button'  className='outline_btn'>

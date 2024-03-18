@@ -72,9 +72,11 @@
   .app {
     @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
   }
-  
+  .dark_btn {
+    @apply rounded-full border  border-black bg-blue-500 py-1.5 px-5 text-black transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+  }
   .black_btn {
-    @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+    @apply rounded-full border border-black bg-blue-200 py-1.5 px-5 text-black transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
   }
   
   .outline_btn {
@@ -94,30 +96,17 @@
   }
   
   .blue_gradient {
-    @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+    @apply text-3xl font-satoshi bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
   }
   
   .desc {
     @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
   }
   
-  .search_input {
-    @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
-  }
-  
-  .copy_btn {
-    @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
-  }
-  
-  .glassmorphism {
-    @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
-  }
+
   
 
-  /* Feed Component */
-  .feed {
-    @apply mt-16 mx-auto w-full max-w-xl flex justify-center items-center flex-col gap-2;
-  }
+
   
   /* Form Component */
   .form_textarea {

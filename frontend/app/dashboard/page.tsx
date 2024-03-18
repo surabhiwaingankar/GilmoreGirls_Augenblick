@@ -34,8 +34,8 @@ export default function Dashboard(){
                 <Nav/>
             </div>
             <div >
-                <Card />
-                <Card2/>
+                <Card mappedArray={mappedArray1}/>
+                <Card2 mappedArray={mappedArray2}/>
             </div>
             
             </div>

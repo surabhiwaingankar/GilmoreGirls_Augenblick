@@ -190,17 +190,6 @@ export default function Home() {
             </div>
           </div>
         </form>
-        <div>
-          <button className="flex w-25 h-14 items-center justify-center  px-3 text-sm  bg-blue-200 font-semibold text-black hover:bg-pink-300 active:bg-violet-800 absolute center-2 bottom-2 disabled:bg-violet-100 disabled:text-violet-400">
-            I want to talk to a human!!
-          </button>
-          <br/> 
-        </div>
-        <div style="margin-top: 2rem;">
-        <button className="flex w-25 h-14 items-center justify-center  px-3 text-sm  bg-blue-200 font-semibold text-black hover:bg-pink-300 active:bg-violet-800 absolute center-4 bottom-2 disabled:bg-violet-100 disabled:text-violet-400">
-            End Chat
-          </button>
-        </div>
       </div>
     </main>
   );

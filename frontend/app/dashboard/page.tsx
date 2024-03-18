@@ -44,7 +44,7 @@ export default function Dashboard(){
             <div>
                 <Nav/>
             </div>
-            <div >
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <Card mappedArray={mappedArray1}/>
                 <Card2 mappedArray={mappedArray2}/>
             </div>

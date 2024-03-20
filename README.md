@@ -12,7 +12,7 @@ Our application is tailored for providing details about laptops. The conversatio
 - Real-time chat interface for customers to interact with the conversational assistant.
 - Sentiment analysis to gauge and respond to customer emotions effectively.
 - Frictionless user experience with accurate and timely information.
-- Dashboard for human customer care agents to manage cases and view chat transcripts.
+- Dashboard for human cases vs agent cases
 - Retrieval augmented generation (RAG) capabilities for querying knowledge base of products and services.
 
 ## Technologies Used
@@ -39,8 +39,8 @@ Our application is tailored for providing details about laptops. The conversatio
 git clone https://github.com/your-username/llm-customer-care-assistant.git
 ```
 ## Built By
-- Surabhi Waingankar
-- Tanisha Kanal 
+- Surabhi Waingankar 😎
+- Tanisha Kanal 🥳
 
 
 

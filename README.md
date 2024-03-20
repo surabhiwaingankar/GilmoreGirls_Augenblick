@@ -1,4 +1,4 @@
-# Gilmore-Girls_Augenblick
+# GilmoreGirls_Augenblick
 # LLM Powered Conversational Customer Care Assistant - SahAIta
 
 Welcome to our conversational customer care assistant web application powered by large language models (LLMs) with sentiment analysis capabilities. This application provides a seamless interface for customer service interactions, aiming to offer accurate product information, address customer queries, and handle complaints efficiently. The chatbot component is integrated with sentiment analysis to ensure positive and professional customer interactions.
